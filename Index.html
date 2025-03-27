@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeFlix - Watch Anime & Movies</title>
+    <title>AnimeFlix - Watch Anime Online</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
     <nav>
         <div class="logo">AnimeFlix</div>
         <div class="search">
-            <input type="text" placeholder="Search anime...">
-            <button>Search</button>
+            <input type="text" id="searchInput" placeholder="Search anime...">
+            <button id="searchBtn">Search</button>
         </div>
     </nav>
 
@@ -22,17 +22,11 @@
         <p>Stream Invincible, Attack on Titan, Jujutsu Kaisen, and more!</p>
     </section>
 
-    <!-- Anime List -->
+    <!-- Anime List (Dynamically Loaded via API) -->
     <section class="anime-list">
         <h2>Popular Anime</h2>
-        <div class="anime-grid">
-            <!-- Anime Card 1 -->
-            <div class="anime-card">
-                <img src="invincible-poster.jpg" alt="Invincible">
-                <h3>Invincible</h3>
-                <button>Watch Now</button>
-            </div>
-            <!-- Add more cards as needed -->
+        <div class="anime-grid" id="animeGrid">
+            <!-- Anime cards will load here via JavaScript -->
         </div>
     </section>
 
@@ -43,4 +37,4 @@
 
     <script src="script.js"></script>
 </body>
-              </html>
+</html>
